@@ -1,0 +1,12 @@
+import random
+
+length_of_pass = int(input("How long do you want the password to be? "))
+ascii = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&’()*+,-./:;<=>?[|]{}^~@_"
+password = ""
+
+def password_generator(pass_length):
+    password = ''.join(random.choice(ascii) for i in range(pass_length))
+    print("\nPassword: \n" + password)
+
+password_generator(length_of_pass)
+del password
