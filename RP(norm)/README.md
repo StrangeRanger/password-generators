@@ -1,1 +1,1 @@
-This script is a bare bone password generated.
+This script will create a randomly generated password. It has the bare bone features and will not provide you the option of choosing what type of characters you want in your password. The default character in the password concists of lowercase, uppercase, special characters, and numbers.
