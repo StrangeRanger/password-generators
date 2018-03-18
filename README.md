@@ -1,2 +1,2 @@
 # random_generators
-Scripts that create randomly generated things
+This repository contains scripts that are used to perform or create randomly generated things. (NOTE: Each folder represents a different script or program)
