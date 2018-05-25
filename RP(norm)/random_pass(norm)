@@ -1,6 +1,12 @@
 import random
 
-length_of_pass = int(input("How long do you want the password to be? "))
+while True:
+    try:
+        length_of_pass = int(input("How long do you want the password to be? "))
+        break
+    except ValueError:
+        print("**Please make sure you only use numbers.**\n")
+
 ascii = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&’()*+,-./:;<=>?[|]{}^~@_"
 password = ""
 
