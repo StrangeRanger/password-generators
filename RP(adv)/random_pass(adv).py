@@ -2,7 +2,12 @@ import re
 import random
 import string
 
-length_of_pass = int(input("How long do you want the password to be? "))
+while True:
+    try:
+        length_of_pass = int(input("How long do you want the password to be? "))
+        break
+    except ValueError:
+        print("**Please make sure you only use numbers.**\n")
 
 # the four variables below are the components/characters to make up ascii _____
 lowercase = string.ascii_lowercase
@@ -12,8 +17,6 @@ special = "!#$%&’()*+,-./:;<=>?[|]{}^~@_"
 emoji = "😀😃😄😁😆😅😂🤣☺️😊😇🙂🙃😉😌😍😘😗😙"
 # variable that any of the chosen components (variables) above will be added to
 ascii_text = ""
-# components/character groups of ascii that will be in the password, are place in variable true
-#true = []
 
 # will determine which components/character groups of ascii will be in the password
 def components():
