@@ -5,9 +5,14 @@ import string
 while True:
     try:
         length_of_pass = int(input("How long do you want the password to be? "))
-        break
     except ValueError:
         print("**Please make sure you only use numbers.**\n")
+        continue
+
+    if length_of_pass < 0:
+        print("**You've used an invalid number. Please use a number that is not negative**\n")
+    else:
+        break
 
 # the four variables below are the components/characters to make up ascii _____
 lowercase = string.ascii_lowercase
@@ -90,3 +95,4 @@ def password_generator(pass_length):
         password_generator(length_of_pass)
 
 password_generator(length_of_pass)
+
