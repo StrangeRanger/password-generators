@@ -10,7 +10,7 @@ while True:
         continue
 
     if length_of_pass < 0:
-        print("**You've used an invalid number. Please use a number that is not negative**\n")
+        print("**You've used an invalid number. Please use a number that is not negative.**\n")
     else:
         break
 
