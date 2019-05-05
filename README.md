@@ -1,2 +1,2 @@
-# Random Generator Scripts
-This repository contains scripts that are used to perform or create randomly generated things. (NOTE: Each folder contains an individual script/program that works independent from the scripts/programs in the other folders)
+# Purpose Of Repository
+Contains two versions of a script that randomly generates a password. One version prints out a random password while the other does the same thing, but provides more options and more control. See read me in each folder for more info on the corresponding script.
